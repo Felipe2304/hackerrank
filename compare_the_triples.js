@@ -11,7 +11,7 @@ const comparacao = (a, b) => {
       bob += 1;
     }
   }
-  const resultado=[alice,bob]
+  const resultado = [alice,bob]
   
   return resultado
 };

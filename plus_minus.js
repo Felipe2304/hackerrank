@@ -1,5 +1,5 @@
-const arr = [-4,3,-9,0,4,1]
 
+  const arr = [-4,3,-9,0,4,1]
 const plusMinus=(arr)=>{
   
   let positivos = 0 

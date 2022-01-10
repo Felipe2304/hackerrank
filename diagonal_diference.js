@@ -10,7 +10,7 @@ const calcMatriz = (arr) => {
 
   let  resultado = soma1 - soma2;
   
-  if (resulatado < 0){
+  if (resultado < 0){
     resultado = resultado * -1;
   }
   // return resulatado

@@ -4,7 +4,6 @@ const checkResult = (a, b) => {
 };
 
 const migratoryBirds = (arr) => {
-  arr = arr.sort()
   const newList = arr.filter((element, index) => {
     return arr.indexOf(element) === index;
   });
@@ -24,6 +23,6 @@ const migratoryBirds = (arr) => {
   }
   return resultedId
 };
-const arr = [1,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,2,3,3,3,3,3]
+const arr = [7,7,7,7,7,7,7,7,7,7,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2]
 const result = migratoryBirds(arr)
-checkResult(2,result)
+checkResult(1,result)

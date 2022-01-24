@@ -15,11 +15,10 @@ const designerPdfViewer = (h, word) => {
     }
   }
   let higheNumber = Math.max(...listIndex);
-
   return higheNumber * 1 * word.length;
 };
 const arr = [
   6, 5, 7, 3, 6, 7, 3, 4, 4, 2, 3, 7, 1, 3, 7, 4, 6, 1, 2, 4, 3, 3, 1, 1, 3, 5,
 ];
-const resulted = designerPdfViewer(arr, "nzbkkfhwplj");
+const resulted = designerPdfViewer(arr, "zbkkfhwplj");
 checkResult(70, resulted);

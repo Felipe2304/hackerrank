@@ -8,7 +8,6 @@ const angryProfessor = (k, a) => {
   a.forEach((currentValue) => {
     if (currentValue <= 0) counter++;
   });
-  
   if (counter >= k) {
     return "NO";
   } else {

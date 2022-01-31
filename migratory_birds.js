@@ -21,6 +21,7 @@ const migratoryBirds = (arr) => {
       resultedId = newList[i];
     }
   }
+  
   return resultedId
 };
 const arr = [7,7,7,7,7,7,7,7,7,7,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2]

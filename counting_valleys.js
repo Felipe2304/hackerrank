@@ -10,9 +10,12 @@ const countingValleys = (steps, path) => {
     if(value === "D" && quantity === -1){
       acc ++
     }
+
+    // console.log(value , quantity)
     return acc
   },0);
  
+console.log(pathList)
   return pathList
 };
 

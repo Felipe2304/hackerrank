@@ -12,7 +12,7 @@ const jumpingOnClouds = (c, k) => {
     if (value === 1) acc -= 2;
     return acc;
   }, energy);
-
+  
   return finalEnergy - numberJumps.length;
 };
 

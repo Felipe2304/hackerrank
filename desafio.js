@@ -1,9 +1,5 @@
-const arr = [1, 4, 5, 7, 9, 12]
+let teste = 123
+teste = teste.toString().split('').reverse().join('')
+console.log(parseInt(teste))
 
-function introTutorial(V, arr) {
-  
-  return arr.indexOf(V)
 
-}
-
-introTutorial(4,arr)

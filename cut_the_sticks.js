@@ -13,7 +13,6 @@ const cutTheSticks = (arr) => {
     return newList;
   };
   const quantities = [arr.length];
-  let rodeMeuLoop = true;
   let newArr = arr;
   while (rodeMeuLoop) {
     newArr = cut(newArr);

@@ -1,26 +1,45 @@
 
-  const arr = [-4,3,-9,0,4,1]
+const arr = [-4,3,-9,0,4,1]
 const plusMinus=(arr)=>{
-  
-  let positivos = 0 
-  let negativos = 0
-  let zero = 0
-  let matriz = arr.length
 
-  for(let i = 0 ; i < matriz ; i++){
-    let numerosDaLista = arr[i]
-    
-    if(numerosDaLista < 0){
-      negativos++
-    }else if(numerosDaLista > 0){
-      positivos++
-    }else{
-      zero++
-    }
-  }
-  console.log((negativos/matriz).toFixed(6))
-  console.log((positivos/matriz).toFixed(6))
-  console.log((zero/matriz).toFixed(6))
+  // reduce 
+
+  const matriz = arr.length
+
+  const positives = arr.reduce((acc,number)=>{
+    if(number > 0) return [...acc,number] 
+    return acc
+  },[]).length
+
+  const zero = arr.reduce((acc,number)=>{
+    if(number === 0) return [...acc,number] 
+    return acc
+  },[]).length
+
+  const negative = arr.reduce((acc,number)=>{
+    if(number < 0) return [...acc,number] 
+    return acc
+  },[]).length
+  
+  
+  console.log((positives / matriz).toFixed(6) , 'reduce ')
+  console.log((zero / matriz).toFixed(6) , 'reduce ')
+  console.log((negative / matriz).toFixed(6) , 'reduce ')
+  
+  
+  // filter
+
+  const positives2 = arr.filter(number => number > 0 ).length
+  const zero2 = arr.filter(number => number === 0).length
+  const negative2 = arr.filter(number => number < 0).length
+  
+  console.log((positives2 / matriz).toFixed(6) , 'filter ')
+  console.log((zero2 / matriz).toFixed(6) , 'filter ')
+  console.log((negative2 / matriz).toFixed(6) , 'filter ')
+
+
+  
+
   
 }
 

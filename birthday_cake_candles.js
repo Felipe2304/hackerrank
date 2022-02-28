@@ -9,3 +9,9 @@ for(let i = 0 ; i < candles.length ; i++){
 }
 
 console.log(total)
+
+// filter 
+
+const quantidade =  candles.filter(numero => numero === maiorValor).length
+console.log(quantidade)
+
